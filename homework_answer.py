@@ -10,19 +10,16 @@
 # Current program:
 import random
 
-
-def ask_question():
+def dickfuckmyteachersautistic():
     number1 = random.randint(1, 10)
     number2 = random.randint(1, 10)
     number_sum = number1 + number2
     user_input = input("What's " + str(number1) + "+" + str(number2) + "?")
+    if (int(user_input) == number_sum):
+        print("Correct!")
+        return 1
+    return 0
 
-    while int(user_input) != number_sum:  # while the user's input does not match the correct sum (need to convert user_input to an integer)
-        user_input = input("Incorrect! What's " + str(number1) + "+" + str(number2) + "?")
-
-    # since the condition in the while loop is not met, the user got it right.
-    print("Correct!")
-
-
-for i in range(5):
-    ask_question()
+correct = 0
+while correct <5:
+    correct = correct + dickfuckmyteachersautistic()
